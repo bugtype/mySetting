@@ -6,9 +6,11 @@
 
 ## Chrome
 
-## VS code
+## VS code 플러그인
 
-## mac
+https://velog.io/@rtyu1120/%EB%82%B4%EA%B0%80-%EC%93%B0%EB%8A%94-Visual-Studio-Code-%EC%9D%B5%EC%8A%A4%ED%85%90%EC%85%98-%EB%AA%A8%EC%9D%8C%EC%A7%91-kmjtvc7xp8
+
+https://junhobaik.github.io/vsc-plugin-list/
 
 ### terminal ( ~/.zshrc )
 
@@ -23,9 +25,7 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
  
 ```
 
-### terminal
-
-## alias
+## git alias
 
 
 .gitconfig
