@@ -58,13 +58,14 @@ alias gitweek="git log --pretty=format:'%C(green)%h %C(reset) %an %C(blue) %ar %
 
 ## tool
 
-# 컨벤션
 
 ## git commit
 
 ## eslint
 
-### spring boot
+
+
+## spring boot / java 셋팅
 
 ```bash
 brew install maven
