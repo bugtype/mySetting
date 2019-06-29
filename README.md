@@ -60,7 +60,20 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 ## git commit
 
-## eslint
+## eslint 
+
+
+.eslintrc
+
+```javascript
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": "airbnb"
+}
+```
 
 
 
