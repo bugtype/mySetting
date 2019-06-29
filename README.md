@@ -63,3 +63,40 @@ alias gitweek="git log --pretty=format:'%C(green)%h %C(reset) %an %C(blue) %ar %
 ## git commit
 
 ## eslint
+
+### spring boot
+
+```bash
+brew install maven
+
+brew tap adoptopenjdk/openjdk
+brew cask install adoptopenjdk8 adoptopenjdk11
+
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+
+#가지고 있는 자바 버젼 확인
+/usr/libexec/java_home -v 
+
+# ~/.zshrc에 넣어야함
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+export JAVA_HOME=$HOME/.jenv/versions/$(jenv version-name)
+
+# 넣고나서 source로 실행
+source ~/.zhsrc
+
+# version 확인
+echo $JAVA_HOME
+jenv versions
+
+
+jenv global openjdk64-1.8.0.212 && jenv versions
+
+```
+path: /Library/Java/JavaVirtualMachines/
+
+jdk: https://github.com/AdoptOpenJDK/homebrew-openjdk
+
+setting: https://start.spring.io/
+
+참고: https://advenoh.tistory.com/20
