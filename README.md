@@ -99,7 +99,62 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 9. react-native start로 실행
 10. 설치된 앱을 실행하면 자동으로 hot loader가 된다.
 
+#### typescript
 
+1. 설치
+
+- npm install typescript @types/react @types/react-native --save-dev
+
+2. tsconfig.json 만들기
+
+```
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noResolve": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "allowJs": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./node_modules/@types", "./src/@types"]
+  },
+  "exclude": [
+    "node_modules",
+    "dest",
+    "android",
+    "ios",
+    "acceptance-tests",
+    ".jest",
+    "src/setupTests.ts",
+    "./node_modules/**/*"
+  ],
+  "include": ["./node_modules/@types", "./src/**/*", "./src/@types"]
+}
+
+```
+
+귀찮으면 걍 아래껄로 입력
+react-native init MyApp --template typescript
+
+https://github.com/microsoft/TypeScript-React-Native-Starter
+
+### tslint.json
+
+```
+{
+    "extends": [],
+    "defaultSeverity": "warning",
+    "linterOptions": {
+      "exclude": [
+        "config/**/*.js",
+        "node_modules/**/*.ts"
+      ]
+    }
+}
+```
 
 
 ## spring boot / java 셋팅
