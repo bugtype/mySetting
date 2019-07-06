@@ -81,12 +81,18 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 1. react-native-cli 설치
 2. react-native init 폴더명 으로 생성
-3. 생성된 RN 프로젝트에 있는 안드로이드 폴더에 local.properties 생성 후 sdk 설정
-sdk.dir=C\:\\Users\\L\\AppData\\Local\\Android\\Sdk
+3. 생성된 RN 프로젝트에 있는 안드로이드 폴더에 local.properties 생성 후 sdk.dir 추가 후 저장
+
+- sdk.dir=C\:\\Users\\L\\AppData\\Local\\Android\\Sdk
+
 4. 환경변수 ANDROID_HOME 설정 - RN 실행 용도
-C:\Users\L\AppData\Local\Android\Sdk\
+
+- C:\Users\L\AppData\Local\Android\Sdk\
+
 5. 환경변수 PATH 설정 - adb 연결 용도
-C:\Users\L\AppData\Local\Android\Sdk\platform-tools
+
+- C:\Users\L\AppData\Local\Android\Sdk\platform-tools
+
 6. react-native run-android 로 실행
 7. adb devices 로 폰이 usb 연결되어 있는지 확인
 8. adb servce tcp:8081 tcp:8081 입력해서 연결
