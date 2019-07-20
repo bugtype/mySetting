@@ -30,7 +30,14 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 .gitconfig
 
+
 개인적으로 alias에다가 push 관련 스크립트는 넣지 않는다. 사람은 실수를 하므로...
+
+```bash
+brew install fzf
+pip3 install pygments
+
+```
 
 ```bash
 [alias]
