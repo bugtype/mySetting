@@ -50,6 +50,7 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
             _height=$(stty size | awk '{print $1}');\
             git branch | egrep -v '^\\*' | fzf --preview \"git l {1} | head -n $_height\"; \
         }; f"
+    branch-remote = "!f() { git checkout -b \"$1\" \"remotes/origin/$1\"; }; f"
     alias = "!git config --list | egrep '^alias.+'"
     
 ```
