@@ -85,6 +85,19 @@ pip3 install pygments
 
 ## React-native 
 
+### 주의
+
+설치 
+```
+npm i # 먼저 한다.
+pod install # 한다
+```
+
+안될 시
+```
+Android Studio / Xcode에서 실행해 본다.
+```
+
 ### android
 
 1. react-native-cli 설치
@@ -201,3 +214,5 @@ jdk: https://github.com/AdoptOpenJDK/homebrew-openjdk
 setting: https://start.spring.io/
 
 참고: https://advenoh.tistory.com/20
+
+
