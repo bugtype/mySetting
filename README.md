@@ -83,9 +83,15 @@ pip3 install pygments
 }
 ```
 
-## React-native 
+## React-native (RN)
 
 ### 주의
+
+react-redux는 6.0.1을 이용해야 한다.
+```
+npm i --save react-redux@6.0.1.
+expo r -c
+```
 
 설치 
 ```
