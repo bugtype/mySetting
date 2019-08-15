@@ -29,3 +29,7 @@ example
                 textMessage.setText("tttt");
             }
 ```
+
+### mvvm
+
+https://github.com/hazems/mvvm-sample-app
