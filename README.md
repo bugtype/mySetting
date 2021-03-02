@@ -58,7 +58,8 @@ pip3 install pygments
             git branch | egrep -v '^\\*' | fzf --preview \"git l {1} | head -n $_height\"; \
         }; f"
     branch-remote = "!f() { git checkout -b \"$1\" \"remotes/origin/$1\"; }; f"
-    push-u = "!git push --set-upstream upstream"; \
+    push-u = "!git push --set-upstream upstream \"$(git rev-parse --abbrev-ref HEAD)\""
+    push-o = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
     alias = "!git config --list | egrep '^alias.+'"
     
 ```
