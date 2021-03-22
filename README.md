@@ -42,8 +42,8 @@ pip3 install pygments
 ```bash
 [alias]
     s = status -s
-    week="git log --pretty=format:'%C(green)%h %C(reset) %an %C(blue) %ar %C(reset), %C(white) %s' --since='1 week ago'"
-    logs="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --a    bbrev-commit"
+    week="!git log --pretty=format:'%C(green)%h %C(reset) %an %C(blue) %ar %C(reset), %C(white) %s' --since='1 week ago'"
+    logs="!git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
     pm = "!curr=$(git rev-parse --abbrev-ref HEAD) &&  git checkout master && git pull && git checkout $curr"
     pd = "!curr=$(git rev-parse --abbrev-ref HEAD) &&  git checkout develop && git pull && git checkout $curr"
     a = "! # add files with fzf preview diffs; \n\
@@ -60,6 +60,7 @@ pip3 install pygments
     branch-remote = "!f() { git checkout -b \"$1\" \"remotes/origin/$1\"; }; f"
     push-u = "!git push --set-upstream upstream \"$(git rev-parse --abbrev-ref HEAD)\""
     push-o = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
+    pull-rebase = "!git pull --rebase origin master"
     alias = "!git config --list | egrep '^alias.+'"
     
 ```
