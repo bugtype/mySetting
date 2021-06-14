@@ -166,27 +166,6 @@ Android Studio / Xcode에서 실행해 본다.
 
 ```
 
-귀찮으면 걍 아래껄로 입력
-react-native init MyApp --template typescript
-
-https://github.com/microsoft/TypeScript-React-Native-Starter
-
-### tslint.json
-
-```
-{
-    "extends": [],
-    "defaultSeverity": "warning",
-    "linterOptions": {
-      "exclude": [
-        "config/**/*.js",
-        "node_modules/**/*.ts"
-      ]
-    }
-}
-```
-
-
 ## spring boot / java 셋팅
 
 ```bash
